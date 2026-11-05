@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cina Bedmud</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="nav">
+    <a href="#home" class="brand">
+      <!-- GANTI: taruh logo sekolah di folder assets dengan nama logo-sekolah.png -->
+      <span class="img-slot logo"><img src="assets/logo-sekolah.png" alt="Logo sekolah"></span>
+      <span class="brand-text">CINA BEDMUD</span>
+    </a>
+    <nav>
+      <a href="#profil">Profil</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#alasan">TJKT</a>
+      <a href="#kemampuan">Skill</a>
+      <a href="#sosmed">Sosmed</a>
+    </nav>
+  </header>
+
+  <!-- ===== 1. SELAMAT DATANG ===== -->
+  <section id="home" class="hero">
+    <canvas id="sparks"></canvas>
+    <div class="speedlines"></div>
+
+    <div class="hero-text reveal">
+      <p class="kicker">Selamat datang di website</p>
+      <h1 class="glitch" data-text="CINA BEDMUD">CINA BEDMUD</h1>
+      <p class="sub">Jaringan. Kabel. Mikrotik. Semangat tanpa batas.</p>
+      <a href="#profil" class="btn">Mulai <i class="fa-solid fa-bolt"></i></a>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-photo">
+        <!-- GANTI: taruh foto pribadi di folder assets dengan nama foto-pribadi.jpg -->
+        <span class="img-slot"><img src="assets/foto-pribadi.jpg" alt="Foto pribadi"></span>
+      </div>
+
+      <!-- Maskot orisinal (karakter buatan sendiri, bukan karakter anime yang sudah ada) -->
+      <svg class="mascot" viewBox="0 0 200 220" role="img" aria-label="Maskot Bedmud">
+        <polygon points="40,70 52,20 72,56 90,10 108,54 130,14 142,60 164,28 160,80" fill="#ff6b1a"/>
+        <circle cx="100" cy="100" r="52" fill="#ffd7b0"/>
+        <polygon points="52,86 148,86 140,70 60,70" fill="#0d0d0d"/>
+        <rect x="62" y="96" width="30" height="8" rx="2" fill="#0d0d0d"/>
+        <rect x="108" y="96" width="30" height="8" rx="2" fill="#0d0d0d"/>
+        <path d="M80 126 Q100 142 120 126" stroke="#0d0d0d" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <path d="M30 220 L40 160 Q100 190 160 160 L170 220 Z" fill="#161616" stroke="#ff6b1a" stroke-width="4"/>
+        <text x="100" y="205" text-anchor="middle" font-family="Bebas Neue, sans-serif" font-size="22" fill="#ff6b1a">BEDMUD</text>
+      </svg>
+
+      <div class="badge" aria-hidden="true">
+        <svg viewBox="0 0 120 120">
+          <defs><path id="circ" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
+          <circle cx="60" cy="60" r="56" fill="#0d0d0d" stroke="#ff6b1a" stroke-width="3"/>
+          <text font-family="Bebas Neue, sans-serif" font-size="15" fill="#ff6b1a" letter-spacing="3">
+            <textPath href="#circ">BEDMUD CREW • TJKT • BEDMUD CREW • TJKT •</textPath>
+          </text>
+          <polygon points="60,38 68,56 86,56 72,67 78,84 60,73 42,84 48,67 34,56 52,56" fill="#e5322d"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PITA BERJALAN ===== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>TJKT</span><span>JARINGAN</span><span>MIKROTIK</span><span>SUBNETTING</span><span>CRIMPING</span><span>SERVER</span>
+      <span>TJKT</span><span>JARINGAN</span><span>MIKROTIK</span><span>SUBNETTING</span><span>CRIMPING</span><span>SERVER</span>
+    </div>
+  </div>
+
+  <!-- ===== 2-4. NAMA PEMBUAT, KELAS, SEKOLAH ===== -->
+  <section id="profil" class="section">
+    <h2 class="title reveal">Profil Pembuat</h2>
+    <div class="cards three">
+      <article class="card tilt reveal">
+        <span class="label">Nama pembuat</span>
+        <!-- ISI DI SINI -->
+        <h3>[Isi nama lengkap kamu]</h3>
+      </article>
+      <article class="card tilt reveal">
+        <span class="label">Kelas</span>
+        <!-- ISI DI SINI -->
+        <h3>[Isi kelas kamu]</h3>
+      </article>
+      <article class="card tilt reveal">
+        <span class="label">Sekolah</span>
+        <!-- ISI DI SINI -->
+        <h3>[Isi nama sekolah kamu]</h3>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== 5. TENTANG SAYA ===== -->
+  <section id="tentang" class="section">
+    <h2 class="title reveal">Tentang Saya</h2>
+    <div class="card wide reveal">
+      <!-- ISI DI SINI: ceritakan hobi, sifat, dan cita-citamu -->
+      <p>[Tulis tentang dirimu di sini. Contoh: hobi, sifat, cita-cita.]</p>
+    </div>
+  </section>
+
+  <!-- ===== 6. KENAPA MEMILIH TJKT ===== -->
+  <section id="alasan" class="section">
+    <h2 class="title reveal">Kenapa Memilih TJKT</h2>
+    <div class="card wide accent-red reveal">
+      <!-- ISI DI SINI: alasanmu memilih jurusan TJKT -->
+      <p>[Tulis alasan kamu memilih jurusan TJKT di sini.]</p>
+    </div>
+  </section>
+
+  <!-- ===== 7. KEMAMPUAN + FOTO HASIL ===== -->
+  <section id="kemampuan" class="section">
+    <h2 class="title reveal">Kemampuan di TJKT</h2>
+
+    <div class="gallery">
+      <!-- Tiap figure = 1 hasil kerja. Taruh fotonya di assets/hasil1.jpg, hasil2.jpg, dst.
+           Salin satu blok figure untuk menambah foto. -->
+      <figure class="shot tilt reveal">
+        <span class="img-slot"><img src="assets/hasil1.jpg" alt="Hasil kerja 1"></span>
+        <figcaption><b>[Nama kemampuan 1]</b><em>Skill unlocked</em></figcaption>
+      </figure>
+      <figure class="shot tilt reveal">
+        <span class="img-slot"><img src="assets/hasil2.jpg" alt="Hasil kerja 2"></span>
+        <figcaption><b>[Nama kemampuan 2]</b><em>Skill unlocked</em></figcaption>
+      </figure>
+      <figure class="shot tilt reveal">
+        <span class="img-slot"><img src="assets/hasil3.jpg" alt="Hasil kerja 3"></span>
+        <figcaption><b>[Nama kemampuan 3]</b><em>Skill unlocked</em></figcaption>
+      </figure>
+      <figure class="shot tilt reveal">
+        <span class="img-slot"><img src="assets/hasil4.jpg" alt="Hasil kerja 4"></span>
+        <figcaption><b>[Nama kemampuan 4]</b><em>Skill unlocked</em></figcaption>
+      </figure>
+    </div>
+
+    <h3 class="subtitle reveal">Power level</h3>
+    <div class="bars">
+      <!-- data-value = angka 0 sampai 100. Ganti nama dan angkanya sesuai kemampuanmu -->
+      <div class="bar reveal"><span>[Skill 1]</span><div class="track"><i data-value="90"></i></div><b>90%</b></div>
+      <div class="bar reveal"><span>[Skill 2]</span><div class="track"><i data-value="85"></i></div><b>85%</b></div>
+      <div class="bar reveal"><span>[Skill 3]</span><div class="track"><i data-value="80"></i></div><b>80%</b></div>
+    </div>
+  </section>
+
+  <!-- ===== 8. SOSIAL MEDIA (hanya Instagram dan TikTok) ===== -->
+  <section id="sosmed" class="section">
+    <h2 class="title reveal">Sosial Media</h2>
+    <div class="social reveal">
+      <!-- GANTI USERNAME_KAMU dengan username aslimu -->
+      <a class="soc ig" href="https://instagram.com/USERNAME_KAMU" target="_blank" rel="noopener">
+        <i class="fa-brands fa-instagram"></i><span>Instagram</span>
+      </a>
+      <a class="soc tt" href="https://tiktok.com/@USERNAME_KAMU" target="_blank" rel="noopener">
+        <i class="fa-brands fa-tiktok"></i><span>TikTok</span>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Cina Bedmud. Dibuat dengan semangat TJKT.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
